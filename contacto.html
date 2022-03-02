@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <title>Pagina Web ADSW 2022</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <img src="./img/logo.png" alt="Logo de la empresa" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="experiencia.html">Experiencia</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="formulario">
+      <h1>Formulario de Contacto</h1>
+      <form method="post">
+        <label for="txtNombre"
+          >Nombre:
+          <span class="obligatorio">*</span>
+        </label>
+        <input
+          type="text"
+          name="txtNombre"
+          placeholder="Introduzca su nombre"
+          required
+        />
+        <label for="sexo">Sexo</label>
+        Masculino<input type="radio" name="sexo" id="sexo" value="Masculino">
+        Femenino<input type="radio" name="sexo" id="sexo" value="Femenino">
+        <label for="email">Email
+          <span class="obligatorio">*</span>
+        </label>
+        <input type="email" name="email" required placeholder="Correo Electronico"/>
+        <label for="telefono">Telefono
+            <span class="obligatorio">*</span>
+        </label>
+        <input type="tel" name="telefono" id="telefono" placeholder="Escribe tu numero de telefono">
+        <label for="asunto">Asunto:
+            <span class="obligatorio">*</span>
+        </label>
+        <input type="text" name="asunto" id="asunto" required placeholder="Escriba el asunto"/>
+        <label for="mensaje">Mensaje
+            <span class="obligatorio">*</span>
+        </label>
+       <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+       <button type="submit" name="btnEnviar">Enviar</button>
+       <p><span class="obligatorio">*</span> Los Campos son obligatorios</p> 
+      </form>
+    </div>
+  </body>
+</html>

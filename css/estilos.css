@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #252424;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    background: #18688d;
+    width: 100%;
+    clear: both;
+    content: '';
+    display: table; 
+}
+img{
+    width: 120px;
+    height: 50px;
+    float: left;  
+    padding: 5px;   
+}
+nav{
+    float: right;
+}
+.menu{
+    width: 950px;
+    margin: 0 auto; 
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgba(66, 233, 15, 0.76);
+    font-weight: bold;
+}
+nav ul li{
+list-style: none;
+position: relative;
+float: left;
+margin-left: 75px;
+padding: 12px 0;
+}
+
+nav ul li a::before{
+    display: block;
+    content: '';
+    width: 0%;
+    background: #444;
+    height: 5px;
+    top:0;
+    position: absolute;
+    transition: width 0.2s;
+}
+
+nav ul li a:hover::before{
+    width: 100%;
+}
+
+.obligatorio{
+color: red;
+
+}
+.formulario{
+width: 460px;
+height: auto;
+margin: 80px auto;
+background-color: cadetblue;
+
+}
+label{
+    display: block;
+    float: center;
+}
+input{
+    background-color: #44d699a8;
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-width: 1px;
+}
+textarea{
+    background-color: #44d699a8;
+    width: 400px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+button{
+    width: 400px;
+    height: 45px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    background-color:crimson;
+    cursor: pointer;
+}
